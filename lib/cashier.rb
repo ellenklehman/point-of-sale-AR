@@ -7,8 +7,6 @@ class Cashier < ActiveRecord::Base
 
 
   def time_range(start_date, end_date)
-
-
     purchase_range = self.purchases.where("purchase_date >= ? AND purchase_date <= ?", start_date, end_date)
     purchase_range.length
   end
