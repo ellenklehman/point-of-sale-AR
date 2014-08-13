@@ -1,5 +1,6 @@
 describe Cashier do
   it 'has many customers' do
+    inventory1 = ProductInventory.create({})
     cashier = Cashier.create({:name =>'Job'})
     customer = Customer.create({:name => 'Bob'})
     customer2 = Customer.create({:name => 'Rob'})
@@ -9,6 +10,7 @@ describe Cashier do
   end
 
   it 'has many customers' do
+    inventory1 = ProductInventory.create({})
     cashier = Cashier.create({:name =>'Job'})
     customer = Customer.create({:name => 'Bob'})
     customer2 = Customer.create({:name => 'Rob'})
